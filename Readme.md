@@ -8,6 +8,13 @@ This repository serves as a case study for the Grocery Store Forecasting Challen
 
 The dataset used for this case study is provided on the Zindi Africa platform. It consists of historical sales data, product information, and store information. The dataset is utilized to build models that can accurately forecast future sales and help grocery stores optimize their inventory management and supply chain operations.
 
+## Setup
+
+Fork this repository and run the notebook on Colab.
+
+Learn about Google Colab here.
+Learn how to connect Colab to your github account here.
+
 ## Methodology
 
 1. Exploratory Data Analysis (EDA): The case study begins with an in-depth exploration of the dataset to understand its structure, variables, and patterns. EDA techniques such as data visualization and statistical analysis are applied to gain insights into the sales patterns and relationships between variables.
@@ -32,7 +39,7 @@ Feel free to explore the notebooks and source code to gain a deeper understandin
 
 ## Contributing
 
-As this repository is a case study, contributions are not expected. However, if you have any suggestions or improvements, feel free to raise an issue or contact the project maintainer.
+If you have any suggestions or improvements, feel free to raise an issue or contact me.
 
 ## Contact
 
