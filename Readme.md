@@ -46,6 +46,6 @@ If you have any suggestions or improvements, feel free to raise an issue or cont
 If you have any questions or need further information about the case study, please contact the project maintainer:
 
 - Name: Emmanuel Ikogho
-- Email: example@example.com
+- Email: oke.kogo@gmail.com
 
 Enjoy exploring the Grocery Store Forecasting Challenge for Azubian case study!
