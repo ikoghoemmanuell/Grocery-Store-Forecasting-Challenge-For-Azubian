@@ -107,7 +107,8 @@ if choice == 'Home':
 
     if st.button('Predict'):
         sales = predict(sales_data)
-        st.write(f"Total sales for this week is: #{sales}")
+        formatted_sales = round(sales[0], 2)
+        st.write(f"Total sales for this week is: #{formatted_sales}")
 
 
     # # Display the forecast results
