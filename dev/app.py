@@ -11,18 +11,22 @@ import os
 # Get the current directory path
 current_dir = os.path.dirname(os.path.abspath(__file__))
 
-# Load the model from the pickle file
-model_path = os.path.join(current_dir, 'model.pkl')
-model = joblib.load(model_path)
+# Define path for the model and encoder from the pickle file
+assets_dir = os.path.abspath(os.path.join(current_dir, "../assets/ML components"))
+model_path = os.path.join(assets_dir, 'model.pkl')
+encoder_path = os.path.join(assets_dir, 'encoder.pkl')
+# model_path = os.path.join(current_dir, 'model.pkl')
+# encoder_path = os.path.join(current_dir, 'encoder.pkl')
 
-# Load the scaler from the pickle file
-scaler_path = os.path.join(current_dir, 'encoder.pkl')
-scaler = joblib.load(scaler_path)
+# Load the model and encoder from the pickle file
+model = joblib.load(model_path)
+encoder = joblib.load(encoder_path)
 
 
 # Define the getDateFeatures() function
 def getDateFeatures(date):
-    df = pd.DataFrame({'date': [date]})
+    df = pd.DataFrame({'date': pd.to_datetime(date)}, index=[0])  # Convert 'date' to datetime type
+    # df = pd.DataFrame({'date': [date]})
     df['year'] = df['date'].dt.year
     df['month'] = df['date'].dt.month
     df['dayofmonth'] = df['date'].dt.day
@@ -164,7 +168,7 @@ if choice == 'Home':
     prediction_inputs['is_year_end'] = getDateFeatures(prediction_inputs['date'].values[0])['is_year_end']
 
     # Scale the prediction inputs
-    prediction_inputs_scaled = scaler.transform(prediction_inputs)
+    prediction_inputs_scaled = encoder.transform(prediction_inputs)
 
 
     if st.button('Predict'):
@@ -174,7 +178,7 @@ if choice == 'Home':
     
 
 # Scale the prediction inputs
-prediction_inputs_scaled = scaler.transform(prediction_inputs)
+prediction_inputs_scaled = encoder.transform(prediction_inputs)
 
 if st.button('Predict'):
     # Make the prediction using the loaded machine learning model
