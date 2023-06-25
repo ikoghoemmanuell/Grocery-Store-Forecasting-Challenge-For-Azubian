@@ -51,6 +51,7 @@ def getDateFeatures(date):
     seasons = {'Winter': [12, 1, 2], 'Spring': [3, 4, 5], 'Summer': [6, 7, 8], 'Autumn': [9, 10, 11]}
 
     # Create the 'season' column based on the 'date' column
+    df['season'] = df['month'].map({month: season for season, months in seasons.items() for month in months})
     df = df.set_index('date')
     prediction_inputs = df.to_dict(orient='records')[0]
     return prediction_inputs
