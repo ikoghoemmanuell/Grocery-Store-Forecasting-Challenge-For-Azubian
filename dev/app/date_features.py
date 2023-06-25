@@ -9,7 +9,7 @@ def getDateFeatures(df):
     df['month'] = df['date'].dt.month
     df['dayofmonth'] = df['date'].dt.day
     df['dayofweek'] = df['date'].dt.dayofweek
-    df['weekofyear'] = df['date'].dt.isocalendar().week
+    df['weekofyear'] = df['date'].dt.weekofyear
 
     df['quarter'] = df['date'].dt.quarter
     df['is_month_start'] = df['date'].dt.is_month_start.astype(int)

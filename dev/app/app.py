@@ -36,20 +36,21 @@ choice = st.sidebar.selectbox("Select an option", menu)
 
 def predict(sales_data):
     sales_data = getDateFeatures(sales_data).set_index('date')
-    print(sales_data.columns)
+    # print(sales_data.columns)
 
     # Make predictions for the next 8 weeks
     prediction_inputs = []  # Initialize the list for prediction inputs
 
     # Encode the prediction inputs
-    numeric_columns = sales_data.select_dtypes(include=['int64', 'float64']).columns.tolist()
-    categoric_columns = [col for col in sales_data.columns if col not in numeric_columns]   
+    # numeric_columns = sales_data.select_dtypes(include=['int64', 'float64']).columns.tolist()
+    numeric_columns = ['onpromotion', 'year', 'month', 'dayofmonth', 'dayofweek', 'dayofyear', 'weekofyear', 'quarter', 'year_weekofyear', 'sin(dayofyear)', 'cos(dayofyear)']
+    categoric_columns = ['store_id','category_id','city','store_type','cluster','holiday_type','is_holiday','is_month_start','is_month_end','is_quarter_start','is_quarter_end','is_year_start','is_year_end','is_weekend', 'season'] 
+    print(categoric_columns)
     # encoder = BinaryEncoder(drop_invariant=False, return_df=True,)
     # encoder.fit(sales_data[categoric_columns]) 
     num = sales_data[numeric_columns]
     encoded_cat = encoder.transform(sales_data[categoric_columns])
     sales_data = pd.concat([num, encoded_cat], axis=1)
-    print(sales_data)
     
     # Make the prediction using the loaded machine learning model
     predicted_sales = model.predict(sales_data)
@@ -106,7 +107,7 @@ if choice == 'Home':
 
     if st.button('Predict'):
         sales = predict(sales_data)
-        st.write(f"Sales: #{sales:.2f}")
+        st.write(f"Total sales for this week is: #{sales}")
 
 
     # # Display the forecast results
