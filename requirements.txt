@@ -1,7 +1,8 @@
 streamlit
-pandas 
-numpy 
+pandas==1.5.3
+numpy==1.24.2
 pillow 
 requests 
 bokeh 
-joblib
+scikit-learn==1.2.2
+category_encoders

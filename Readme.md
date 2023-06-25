@@ -41,6 +41,16 @@ Feel free to explore the notebooks and source code to gain a deeper understandin
 
 If you have any suggestions or improvements, feel free to raise an issue or contact me.
 
+to run app, go to your terminal and run
+
+# to change directory
+
+cd dev
+
+# to run the app
+
+streamlit run app.py
+
 ## Contact
 
 If you have any questions or need further information about the case study, please contact the project maintainer:
