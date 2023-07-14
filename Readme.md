@@ -1,4 +1,13 @@
-# Grocery Store Forecasting Challenge for Azubian: Case Study
+# Grocery Sales Forecasting Challenge for Azubian
+
+[![View Repositories](https://img.shields.io/badge/View-My_Repositories-blue?logo=GitHub)](https://github.com/ikoghoemmanuell?tab=repositories)
+[![View My Profile](https://img.shields.io/badge/MEDIUM-Article-purple?logo=Medium)]()
+[![Streamlit App](https://img.shields.io/badge/Streamlit-App-yellow)](https://huggingface.co/spaces/ikoghoemmanuell/SEER-A_sales_forecasting_app)
+[![Website](https://img.shields.io/badge/My-Website-darkgreen)](https://emmanuelikogho.netlify.app/)
+
+Increase sales of groceries using exploratory data analysis and machine learning.
+
+![Alt text](grocery-sales-challenge-readme-azubian-.gif)
 
 ## Introduction
 
@@ -37,25 +46,56 @@ The repository is organized as follows:
 
 Feel free to explore the notebooks and source code to gain a deeper understanding of the case study methodology.
 
-## Contributing
-
-If you have any suggestions or improvements, feel free to raise an issue or contact me.
-
-to run app, go to your terminal and run
-
-# to change directory
-
-cd dev
-
 # to run the app
 
+Fork this repository first of all. Now follow the steps below
+
+You need to have [`Python 3`](https://www.python.org/) on your system (**a Python version lower than 3.10**). Then you can clone this repo and being at the repo's `root :: repository_name> ...` follow the steps below:
+
+- Windows:
+
+```python
+python -m venv venv; venv\Scripts\activate; python -m pip install -q --upgrade pip; python -m pip install -qr requirements.txt
+```
+
+- Linux & MacOs:
+
+```python
+python3 -m venv venv; source venv/bin/activate; python -m pip install -q --upgrade pip; python -m pip install -qr requirements.txt
+```
+
+The both long command-lines have a same structure, they pipe multiple commands using the symbol `;` but you may manually execute them one after another.
+
+1. **Create the Python's virtual environment** that isolates the required libraries of the project to avoid conflicts;
+2. **Activate the Python's virtual environment** so that the Python kernel & libraries will be those of the isolated environment;
+3. **Upgrade Pip, the installed libraries/packages manager** to have the up-to-date version that will work correctly;
+
+change directory to where the app is located
+
+```python
+cd dev; cd app
+```
+
+to run app, install the requirements for the app,
+
+```python
+pip install streamlit transformers torch
+```
+
+then go to your terminal and run
+
+```python
 streamlit run app.py
+```
 
-## Contact
+# screenshot
 
-If you have any questions or need further information about the case study, please contact the project maintainer:
+![Alt text](seer-sales-prediction-for-azubian.gif)
 
-- Name: Emmanuel Ikogho
-- Email: oke.kogo@gmail.com
+## 👏 Support
 
-Enjoy exploring the Grocery Store Forecasting Challenge for Azubian case study!
+If you found this article helpful, please give it a clap or a star on GitHub!
+
+## Author
+
+- [Emmanuel Ikogho](https://www.linkedin.com/in/emmanuel-ikogho/)
