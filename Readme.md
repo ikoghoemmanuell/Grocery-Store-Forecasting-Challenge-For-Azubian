@@ -7,7 +7,7 @@
 
 Increase sales of groceries using exploratory data analysis and machine learning.
 
-![Alt text](grocery-sales-challenge-readme-azubian-.gif)
+![grocery-sales-challenge-readme-azubian-](https://github.com/ikoghoemmanuell/Grocery-Store-Forecasting-Challenge-For-Azubian/assets/102419217/88f2040f-72a1-4bb0-936a-f2520ae73a2f)
 
 ## Introduction
 
@@ -90,7 +90,8 @@ streamlit run app.py
 
 # screenshot
 
-![Alt text](seer-sales-prediction-for-azubian.gif)
+![seer-sales-prediction-for-azubian](https://github.com/ikoghoemmanuell/Grocery-Store-Forecasting-Challenge-For-Azubian/assets/102419217/933f5f5b-2976-4499-bd48-050c1bab5bd0)
+
 
 ## 👏 Support
 
