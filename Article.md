@@ -1,4 +1,7 @@
-# How to Focast Grocery Sales Using Machine Learning 
+# Focast Grocery Sales Using Machine Learning 
+![grocery-sales-challenge-readme-azubian-](https://github.com/ikoghoemmanuell/Grocery-Store-Forecasting-Challenge-For-Azubian/assets/102419217/621cc943-14ca-4148-bed5-85afd96b6c96)
+ 
+
 Azubian, a company with grocery stores across Africa, has been facing a decline in sales lately, primarily due to losing customers due to understocking popular goods. When customers visit their stores and find essential items like rice unavailable, they may be disappointed and shop elsewhere. Another challenge they've encountered is limited storage space for their stock.
 
 To address these issues and improve their business outlook, Azubian seeks the expertise of a skilled data analyst like yourself. They have approached you to analyze their sales data and provide valuable recommendations for the future. Your analysis will focus on identifying the products most likely to run out of stock and predict the quantities required, enabling them to proactively manage their inventory and meet customer demand effectively. 
