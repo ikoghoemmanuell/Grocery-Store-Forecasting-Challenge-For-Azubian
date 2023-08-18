@@ -1,7 +1,7 @@
 # Grocery Sales Forecasting Challenge for Azubian
 
 [![View Repositories](https://img.shields.io/badge/View-My_Repositories-blue?logo=GitHub)](https://github.com/ikoghoemmanuell?tab=repositories)
-[![View My Profile](https://img.shields.io/badge/MEDIUM-Article-purple?logo=Medium)]()
+[![View My Profile](https://img.shields.io/badge/MEDIUM-Article-purple?logo=Medium)](https://github.com/ikoghoemmanuell/Grocery-Store-Forecasting-Challenge-For-Azubian/blob/main/Article.md)
 [![Streamlit App](https://img.shields.io/badge/Streamlit-App-yellow)](https://huggingface.co/spaces/ikoghoemmanuell/SEER-A_sales_forecasting_app)
 [![Website](https://img.shields.io/badge/My-Website-darkgreen)](https://emmanuelikogho.netlify.app/)
 
